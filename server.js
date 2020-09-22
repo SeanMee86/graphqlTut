@@ -7,7 +7,7 @@ const {username, password, database} = require('./keys');
 mongoose.connect(`mongodb+srv://${username}:${password}@wbcluster.nxeyu.mongodb.net/${database}?retryWrites=true&w=majority`, {useUnifiedTopology: true, useNewUrlParser: true})
 
 mongoose.connection.once('open', () => {
-    console.log("connected to database");
+    console.log("connected to database yay");
 })
 
 const app = express();
